@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: "nav" "header" "main" "listado" "footer";
+    /* grid-template-rows: 2fr 6fr 12fr 4fr 2fr; */
+    /*grid-template-columns: 1fr 1fr;*/
+    gap: 10px;
+    /* background-color: #FBF5F3; */
+    background-color: #DDE2C6;
+}
+
+nav {
+    grid-area: nav;
+    background-color: black;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+nav li {
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+header {
+    grid-area: header;
+    background-color: #DDE2C6;
+    height: 25rem;
+    padding: 20px;
+    background-image: url("../img/header.jpg");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+main {
+    font-size: 10rem;
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "div_proyecto1" "div_proyecto2" "div_proyecto3";
+    justify-items: center;
+    /* width: 80%;
+    margin: auto; */
+}
+
+.centrado_div {
+    margin: auto;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #090C02;
+    height: 5rem;
+}
+
+input {
+    padding: 5px 8px;
+    border: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.texto_sin_deco {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* FONDOS DE COLORES */
+
+.verde {
+    background-color: green;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.gris {
+    background-color: gray;
+}
+
+.amarillo {
+    background-color: yellow;
+}
